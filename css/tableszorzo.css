@@ -1,0 +1,13 @@
+tabla.szorzo{
+    border: 1px Black solid;
+    background-color: Green;
+    color:white;
+    width:auto;
+    margin:auto;
+}
+tabla.szorzo td{
+    border: 1px white solid;
+}
+tabla.szorzo td hover{
+    background-color: lightgreen;
+}

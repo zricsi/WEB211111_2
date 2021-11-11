@@ -1,0 +1,91 @@
+:root {
+	--color1: White; 	
+		/* header-back, nav-color, nav-a-color, nav-a-hover-back, main-back, #up-border, up-hover-back */
+	--color2: LightGray; 
+		/* body-back, main-a-hover-back, footer-color */
+	--color3:	Gray; 
+		/* nav-back, footer-a-color */
+	--color4: DarkGray;
+		/*  */
+	--color5:	Black; 
+		/* .full-box-shadow, footer-back, h1-text-shadow, h2-color */
+	--color6: Chocolate; 
+		/* nav-a-hover-color, main-a-color, footer-a-hover-color, h1-color, h2-text-shadow, #up-color */
+	--color7: Chocolate; 
+		/* header-color */
+}
+
+* { box-sizing: border-box;}
+body { background-color: var(--color2); }
+a { text-decoration: none;
+		
+		padding: 3px 10px;
+		border-radius: 5px;}
+.full { box-shadow: 0 0 10px var(--color5);
+	width: 95%;
+	max-width: 800px;
+	margin:auto; }
+header { background-color: var(--color1);
+	width: 100%;
+	margin: auto;
+	padding: 20px;
+	overflow: auto;
+	color: var(--color7); }
+nav { background-color: var(--color3);
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	padding: 20px;
+	margin: 5px 0 5px 0;
+	color: var(--color1); }
+nav a { color: var(--color1); }
+nav a:hover { background-color: var(--color1);
+	color: var(--color6); }
+main { background-color: var(--color1);
+	width: 100%;
+	margin: auto;
+	padding: 20px; 
+	overflow: auto;}
+main a { color: var(--color6); }
+main a:hover { background-color: var(--color2); }
+footer { width: 100%;
+	margin: auto;
+	background-color: var(--color5);
+	margin-top: 5px;
+	padding: 20px;
+	color: var(--color2); }
+footer div {display: inline;}
+footer div.autor { float:left;}
+footer div.link { float: right;}
+footer a { color: var(--color3); }
+footer a:hover { color: var(--color6);}
+h1 { color: var(--color6);
+	text-shadow: 1px 1px 1px var(--color5); }
+h2 { text-align: center; 
+	color: var(--color5);
+	text-shadow: 1px 1px 1px var(--color6); }
+
+@media screen and (min-width:600px)
+{
+	#up {
+			display: none;
+	}
+}
+
+#up {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	border: 2px solid var(--color6);
+	color: var(--color6);
+	background-color: var(--color1);
+	height: 40px;
+	width: 40px;
+	font-weight: bold;
+	line-height: 20px;
+	padding: 10px;
+	border-radius: 50%; }
+#up:hover {
+	color: var(--color1);
+	background-color: var(--color6);
+}
